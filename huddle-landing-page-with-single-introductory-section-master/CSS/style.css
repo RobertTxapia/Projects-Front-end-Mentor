@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Background-violet: hsl(257, 40%, 49%);
+    --Soft-magenta: hsl(300, 69%, 71%);
+    --font-Headings: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Background-violet);
+    background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    color: #fff;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.logo {
+    padding: 40px  40px;
+}
+
+.logo__img {
+    width: 200px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.hero__img {
+    display: block;
+    width: 630px;
+}
+
+.hero__text {
+    margin-top: -100px;
+    margin-left: 60px;
+}
+
+
+.hero__title {
+    font-family: var(--font-Headings);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.hero__paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0 25px;
+    line-height: 1.5;
+}
+
+.hero__cta {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 16px 20px;
+    border-radius: 40px;
+    width: 200px;
+    color: var(--Background-violet);
+    background-color: #fff;
+    box-shadow: 9px 20px 40px -3px rgba(0,0,0,0.32);
+-webkit-box-shadow: 9px 20px 40px -3px rgba(0,0,0,0.32);
+-moz-box-shadow: 9px 20px 40px -3px rgba(0,0,0,0.32);
+}
+
+
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.icon__links {
+    padding-left: 35px;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+@media (max-width:760px) {
+    body {
+        background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 660px) {
+    .hero {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .hero__img {
+        width: 460px;
+    }
+
+    .hero__text {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 90px;
+    }
+
+    .hero__title {
+        font-size: 2.2rem;
+    }
+
+    .hero__paragraph {
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+
+    .icons {
+        justify-content: center;
+        margin: 80px 0;
+    }
+
+    .icon__links {
+        margin-left: 20px;
+    }
+}
